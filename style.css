@@ -3,13 +3,13 @@
 /* 1. Import Fonts (Replace with your GitHub Raw links later) */
 @font-face {
   font-family: 'Splash';
-  src: url('PASTE_LINK_TO_SPLASH_TTF_HERE') format('truetype');
+  src: url('https://github.com/ZoraPotato44/payhip-theme-splash/raw/refs/heads/main/fonts/SPLASH.ttf') format('truetype');
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Splash-Regular';
-  src: url('PASTE_LINK_TO_SPLASH_REGULAR_TTF_HERE') format('truetype');
+  src: url('https://github.com/ZoraPotato44/payhip-theme-splash/raw/refs/heads/main/fonts/SPLASH%20-%20REGULAR.ttf') format('truetype');
   font-display: swap;
 }
 
