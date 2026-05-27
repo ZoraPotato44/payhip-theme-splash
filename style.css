@@ -1,0 +1,52 @@
+/* --- Splash: Music and Skate Theme --- */
+
+/* 1. Import Fonts (Replace with your GitHub Raw links later) */
+@font-face {
+  font-family: 'Splash';
+  src: url('PASTE_LINK_TO_SPLASH_TTF_HERE') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Splash-Regular';
+  src: url('PASTE_LINK_TO_SPLASH_REGULAR_TTF_HERE') format('truetype');
+  font-display: swap;
+}
+
+/* 2. Base Theme Variables */
+:root {
+  --sc-bg: #0d0e14;
+  --sc-text: #ffffff;
+  --sc-neon-pink: #ff007f;
+  --sc-neon-blue: #00f2ff;
+  --sc-accent: #a4ff39;
+}
+
+/* 3. Apply Styling */
+body {
+  background-color: var(--sc-bg) !important;
+  color: var(--sc-text) !important;
+  font-family: 'Splash-Regular', sans-serif !important;
+}
+
+h1, h2, h3, h4, .custom-style-font-heading {
+  font-family: 'Splash', sans-serif !important;
+  color: var(--sc-neon-pink) !important;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.button, .btn {
+  border: 2px solid var(--sc-neon-blue) !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+}
+
+.button:hover, .btn:hover {
+  background: var(--sc-neon-blue) !important;
+  color: var(--sc-bg) !important;
+  box-shadow: 0 0 15px var(--sc-neon-blue) !important;
+  transform: scale(1.05);
+}
