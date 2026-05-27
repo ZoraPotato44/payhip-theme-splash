@@ -1,6 +1,6 @@
 /* --- Splash: Music and Skate Theme --- */
 
-/* 1. Import Fonts (Replace with your GitHub Raw links later) */
+/* 1. Import Fonts */
 @font-face {
   font-family: 'Splash';
   src: url('https://github.com/ZoraPotato44/payhip-theme-splash/raw/refs/heads/main/fonts/SPLASH.ttf') format('truetype');
@@ -13,40 +13,32 @@
   font-display: swap;
 }
 
-/* 2. Base Theme Variables */
-:root {
-  --sc-bg: #0d0e14;
-  --sc-text: #ffffff;
-  --sc-neon-pink: #ff007f;
-  --sc-neon-blue: #00f2ff;
-  --sc-accent: #a4ff39;
-}
-
-/* 3. Apply Styling */
-body {
-  background-color: var(--sc-bg) !important;
-  color: var(--sc-text) !important;
+/* 2. Global Overrides - Force these colors everywhere */
+body, html, .payhip-store-builder {
+  background-color: #0d0e14 !important;
+  color: #ffffff !important;
   font-family: 'Splash-Regular', sans-serif !important;
 }
 
+/* 3. Headings */
 h1, h2, h3, h4, .custom-style-font-heading {
   font-family: 'Splash', sans-serif !important;
-  color: var(--sc-neon-pink) !important;
+  color: #ff007f !important;
   text-transform: uppercase;
   text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
 }
 
-.button, .btn {
-  border: 2px solid var(--sc-neon-blue) !important;
+/* 4. Buttons */
+.button, .btn, button {
+  border: 2px solid #00f2ff !important;
   border-radius: 8px !important;
   background: transparent !important;
+  color: #ffffff !important;
   transition: all 0.3s ease !important;
-  cursor: pointer;
 }
 
-.button:hover, .btn:hover {
-  background: var(--sc-neon-blue) !important;
-  color: var(--sc-bg) !important;
-  box-shadow: 0 0 15px var(--sc-neon-blue) !important;
-  transform: scale(1.05);
+.button:hover, .btn:hover, button:hover {
+  background: #00f2ff !important;
+  color: #0d0e14 !important;
+  box-shadow: 0 0 15px #00f2ff !important;
 }
