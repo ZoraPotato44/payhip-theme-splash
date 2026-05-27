@@ -13,32 +13,55 @@
   font-display: swap;
 }
 
-/* 2. Global Overrides - Force these colors everywhere */
-body, html, .payhip-store-builder {
-  background-color: #0d0e14 !important;
-  color: #ffffff !important;
+/* 2. Base Theme Variables */
+:root {
+  --sc-bg: #0d0e14;
+  --sc-text: #ffffff;
+  --sc-neon-pink: #ff007f;
+  --sc-neon-blue: #00f2ff;
+  --sc-accent: #a4ff39;
+}
+
+/* 3. Apply Styling */
+body, html {
+  background-color: var(--sc-bg) !important;
+  color: var(--sc-text) !important;
   font-family: 'Splash-Regular', sans-serif !important;
 }
 
-/* 3. Headings */
 h1, h2, h3, h4, .custom-style-font-heading {
   font-family: 'Splash', sans-serif !important;
-  color: #ff007f !important;
+  color: var(--sc-neon-pink) !important;
   text-transform: uppercase;
   text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
 }
 
-/* 4. Buttons */
-.button, .btn, button {
-  border: 2px solid #00f2ff !important;
-  border-radius: 8px !important;
-  background: transparent !important;
-  color: #ffffff !important;
-  transition: all 0.3s ease !important;
+/* 4. SPLASH-Style Product Buttons */
+.button, .btn, .payhip-product-button {
+  background-color: var(--sc-bg) !important;
+  border: 3px solid var(--sc-neon-blue) !important;
+  border-radius: 0px !important;
+  padding: 15px 30px !important;
+  color: var(--sc-text) !important;
+  font-family: 'Splash', sans-serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  box-shadow: 6px 6px 0px var(--sc-neon-pink) !important;
+  transition: all 0.2s ease !important;
 }
 
-.button:hover, .btn:hover, button:hover {
-  background: #00f2ff !important;
-  color: #0d0e14 !important;
-  box-shadow: 0 0 15px #00f2ff !important;
+.button:hover, .btn:hover, .payhip-product-button:hover {
+  background-color: var(--sc-neon-blue) !important;
+  color: var(--sc-bg) !important;
+  border: 3px solid var(--sc-neon-blue) !important;
+  box-shadow: 0px 0px 0px var(--sc-neon-pink) !important;
+  transform: translate(4px, 4px) !important;
+}
+
+/* 5. Product Card Container */
+.product-item {
+  border: 2px solid var(--sc-neon-pink) !important;
+  background-color: #1a1b22 !important;
+  padding: 10px !important;
+  border-radius: 0px !important;
 }
